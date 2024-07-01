@@ -1,0 +1,77 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+header {
+  background-color: #fff; /* White background as per Reebok */
+  color: #000; /* Black text color */
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo img {
+  height: 30px; 
+}
+
+.menu ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.menu ul li {
+  margin-right: 20px;
+  position: relative; 
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #000; 
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.menu ul li a i {
+  margin-right: 5px; 
+}
+
+.menu ul li:hover .submenu {
+  display: block; 
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #fff; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  z-index: 1;
+}
+
+.submenu ul {
+  width: 200px;
+  padding: 10px;
+}
+
+.submenu ul li {
+  margin-bottom: 10px;
+}
+
+.submenu ul li a {
+  color: #000; 
+  transition: color 0.3s ease;
+}
+
+.submenu ul li a:hover {
+  color: #007bff;
+}
